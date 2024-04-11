@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root{
+    --cor1rosa:#C51A6E;
+    --cor2azul:#180A67;
+    --cor3claroFF:#FFF9FF;
+    --cor3claroF3:#F1F0F3;
+    --corcinza:#A1A3A6;
+    --corbranco:white;
+        }
+        main{
+            background-color: var(--cor3claroF3);
+            padding: 30px;
+        }
+        form{
+            padding-top: 20px;
+        }
+        h3{
+            margin: 20px;
+        }
+        #formulario{
+            background-color:var(--corbranco);
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.229);
+            width: 500px;
+            height: 400px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 90px 0px;
+            text-align: center;
+           
+        }
+        input{
+            width: 97%;
+            padding: 10px;
+            margin: 20px 0px;
+            border: solid var(--cor1rosa) 1px;
+            border-radius: 10px;
+        }
+       
+        .lab{
+            text-align: justify;
+            margin-bottom: -15px;
+            font-weight: bold;
+        }
+        #btnpai{
+            text-align: justify;
+        }
+        #btn{
+            background-color: var(--cor3claroFF);
+            width: 40%;
+            border: none;
+            border-radius: 5px;
+            padding: 15px;
+            border: solid var(--cor2azul) 2px;
+            color: var(--cor2azul);
+        }
+        textarea{
+            width: 100%;
+        }
+        @media (max-width: 900px){
+            main{
+
+                padding: 40px 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 500px;
+                margin-left: -20px;
+                
+            }
+            
+            form{
+                background-color:var(--corbranco);
+                box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.229);
+                padding: 0px 10px;
+                margin: 50px 0px;
+                width: 100%;
+            
+            }
+            #formulario{
+                width: 100%;
+                padding: 10px;
+                background-color: var(--cor1rosa);
+                box-shadow: none;
+            }
+           
+            ul{
+                margin-bottom: 20px;
+            }
+            .lab{
+                padding-left: 10px;
+            }
+            input{
+                width: 90%;
+            }
+            #btnpai{
+                margin-top: 2px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EdiCursos</h1>
+    </header>
+    <ul>
+        <a href="index.html"><li>Home</li></a>
+        <a href="quemsamos.html"><li>Sobre</li></a>
+        <a href="#"><li>Contato</li></a>
+        <a href="https://www.youtube.com/@EdiCursos"><li>Canal do you tube</li></a>
+    </ul>
+
+    <main>
+        <div id="formulario">
+  
+        <form action="dados.php" method="post">
+            <h3>Preencha o formulário :</h3>
+            <div class="lab">
+                 <label for="nome">Nome:</label>
+            </div> 
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            <div class="lab">
+              <label for="email">Endereço de E-mail:</label>  
+            </div>
+            
+            <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
+            <div class="lab">
+                <label for="numero">Numero:</label> 
+            </div>
+           
+            <input type="number" name="numero" id="numero" placeholder="Digite seu número" required>
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Digite uma mensagem"></textarea>
+            <div id="btnpai">
+                 <input id="btn" type="submit" value="Enviar mensagem">
+            </div>
+           
+        </form>
+    </div>
+
+      
+    </main>
+    <footer id="rodape">
+
+        <div id="rodape1">
+
+            <div id="email">
+               <p>E-mail:</p>
+               <p>edicursos@gmail.com</p> 
+            </div>
+
+            <div id="fone">
+                <p>Telefone:</p>
+                <p>3686-8084</p>
+            </div>
+
+        </div>
+        <div id="rodape2" >
+                <p>EdiCursos</p>
+            </div>
+      
+    </footer>
+    
+</body>
+</html>
